@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="container text-center">
+    <h1>Password Generator</h1>
+
+    <form action="password">
+        <input type="number" id="length" name="length" min="8" max="16" value="8"><br>
+        <input type="checkbox" name="uppercase"><label for="uppercase">Uppercase</label><br>
+        <input type="checkbox" name="special"><label for="special">SpecialCase</label><br>
+        <input type="checkbox" name="numbers"><label for="numbers">Numbers</label><br>
+        <input type="submit" value="Generate Password" class="btn btn-primary">
+    </form>
+</div>
+
+
+{% endblock %}
